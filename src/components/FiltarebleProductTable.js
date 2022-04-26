@@ -12,10 +12,18 @@ class FiltarebleProductTable extends React.Component {
     };
   }
 
+  handleFilterText = (filterText) => {
+    this.setState({ filterText: filterText });
+  };
+
   render() {
     return (
       <div>
-        <SearchBar />
+        <SearchBar
+          filterText={this.state.filterText}
+          inStockOnly={this.state.inStockOnly}
+          onFilterTextChange={this.handleFilterText}
+        />
         <ProductTable
           products={this.props.product}
           filterText={this.state.filterText}

@@ -5,15 +5,34 @@ class SearchBar extends React.Component {
     super(props);
   }
 
+  handleSearchTextChange = (e) => {
+    this.props.onFilterTextChange(e.target.value);
+  };
+
+  handleInStockonly = (e) => {
+    this.props.onStockonly(e.target.value);
+  };
+
   render() {
     return (
       <div>
-        <input type={"text"} placeholder={"Izlash..."} />
+        <input
+          type={"text"}
+          placeholder={"Izlash..."}
+          value={this.props.inputText}
+          onChange={this.handleSearchTextChange}
+        />
         <p>
-          <input type={"checkbox"} id={"onlyInStock"} name={"onlyInStock"} />
-          <labeL htmlfor={"onlyInStock"}>
+          <input
+            type={"checkbox"}
+            id={"onlyInStock"}
+            name={"onlyInStock"}
+            checked={this.props.inStockonly}
+            onChange={this.props.handleInStockonly}
+          />
+          <label htmlFor={"onlyInStock"}>
             Faqat omborda mavjud bo'lgan mahsulotlar
-          </labeL>
+          </label>
         </p>
       </div>
     );
