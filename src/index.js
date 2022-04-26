@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import FiltarebleProductTable from "./components/FiltarebleProductTable.js";
+
 const PRODUCT = [
   { price: "$3.10", stocked: true, name: "Shaftoli" },
   { price: "$5.10", stocked: true, name: "O'rik" },
