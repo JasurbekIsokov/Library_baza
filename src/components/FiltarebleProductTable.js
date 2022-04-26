@@ -9,7 +9,7 @@ class FiltarebleProductTable extends React.Component {
     return (
       <div>
         <SearchBar />
-        <ProductTable product={this.props.product} />
+        <ProductTable products={this.props.product} />
       </div>
     );
   }
