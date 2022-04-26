@@ -24,3 +24,5 @@ class ProductTable extends React.Component {
     );
   }
 }
+
+export default ProductTable;
