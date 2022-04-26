@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <input type={"text"} placeholder={"Izlash..."} value={""} />
+        <input type={"text"} placeholder={"Izlash..."} />
         <p>
           <input type={"checkbox"} id={"onlyInStock"} name={"onlyInStock"} />
           <labeL htmlfor={"onlyInStock"}>
