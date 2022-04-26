@@ -16,6 +16,10 @@ class FiltarebleProductTable extends React.Component {
     this.setState({ filterText: filterText });
   };
 
+  handleInStockonly = (inStockOnly) => {
+    this.setState({ inStockOnly: inStockOnly });
+  };
+
   render() {
     return (
       <div>
@@ -23,6 +27,7 @@ class FiltarebleProductTable extends React.Component {
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}
           onFilterTextChange={this.handleFilterText}
+          onStockonly={this.handleInStockonly}
         />
         <ProductTable
           products={this.props.product}

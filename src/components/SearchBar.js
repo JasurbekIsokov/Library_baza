@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
             id={"onlyInStock"}
             name={"onlyInStock"}
             checked={this.props.inStockonly}
-            onChange={this.props.handleInStockonly}
+            onChange={this.handleInStockonly}
           />
           <label htmlFor={"onlyInStock"}>
             Faqat omborda mavjud bo'lgan mahsulotlar
