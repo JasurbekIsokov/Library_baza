@@ -1,5 +1,7 @@
 import React from "react";
 
+import ProductRow from "./ProductRow.js";
+
 class ProductTable extends React.Component {
   constructor(props) {
     super(props);
