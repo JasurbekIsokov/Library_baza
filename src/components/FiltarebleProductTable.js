@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../style.css";
 import SearchBar from "./SearchBar.js";
 import ProductTable from "./ProductTable.js";
 

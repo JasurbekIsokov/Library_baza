@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../style.css";
+
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
@@ -15,15 +17,17 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="search_input_div">
         <input
+          className="search_input"
           type={"text"}
           placeholder={"Izlash..."}
           value={this.props.inputText}
           onChange={this.handleSearchTextChange}
         />
-        <p>
+        <p className="filter">
           <input
+            className="filter_chekbox"
             type={"checkbox"}
             id={"onlyInStock"}
             name={"onlyInStock"}
@@ -31,7 +35,7 @@ class SearchBar extends React.Component {
             onChange={this.handleInStockonly}
           />
           <label htmlFor={"onlyInStock"}>
-            Faqat omborda mavjud bo'lgan mahsulotlar
+            Faqat kutubxonada mavjud bo'lgan kitoblar
           </label>
         </p>
       </div>

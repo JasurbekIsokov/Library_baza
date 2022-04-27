@@ -4,14 +4,14 @@ import ReactDOM from "react-dom";
 import FiltarebleProductTable from "./components/FiltarebleProductTable.js";
 
 const PRODUCT = [
-  { price: "$3.10", stocked: true, name: "Shaftoli" },
-  { price: "$5.10", stocked: true, name: "O'rik" },
-  { price: "$6.1", stocked: false, name: "Gilos" },
-  { price: "$2.10", stocked: true, name: "Olma" },
-  { price: "$1.10", stocked: false, name: "Anor" },
-  { price: "$7.10", stocked: true, name: "Nok" },
-  { price: "$2.40", stocked: true, name: "Uzum" },
-  { price: "$1.60", stocked: true, name: "Tarvuz" },
+  { price: "3.10$", stocked: true, name: "Ulamolar Naznida vaqtning qadri" },
+  { price: "5.10$", stocked: true, name: "Biz g'alaba qozonamiz " },
+  { price: "6.1$", stocked: false, name: "Alkimyogar" }, //Omborda mavjud emas
+  { price: "2.10$", stocked: true, name: "Ijtimoiy odoblar" },
+  { price: "1.10$", stocked: false, name: "Savdogarlar ustozi" }, // Omborda mavjud emas
+  { price: "7.10$", stocked: false, name: "Zukkolar va landavurlar" }, // Omborda mavjud emas
+  { price: "1.60$", stocked: false, name: "O'zbeklar" }, // Omborda mavjud emas
+  { price: "2.40$", stocked: true, name: "Supper Hayot" },
 ];
 
 ReactDOM.render(
